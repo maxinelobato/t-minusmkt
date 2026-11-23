@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Top Stopwatch Plunger -->
+    <path
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:pathData="M 82 24 L 118 24 M 100 24 L 100 42">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="20"
+                android:startY="180"
+                android:endX="180"
+                android:endY="20">
+                <item android:offset="0.0" android:color="#00FFFF" />
+                <item android:offset="1.0" android:color="#BF40FF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Stopwatch Outer Ring -->
+    <path
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:pathData="M 100,45 A 60,60 0 1,1 99.9,45 Z">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="20"
+                android:startY="180"
+                android:endX="180"
+                android:endY="20">
+                <item android:offset="0.0" android:color="#00FFFF" />
+                <item android:offset="1.0" android:color="#BF40FF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Dial Tick Marks (Cyan & Purple) -->
+    <path
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M 100 55 L 100 64 M 50 105 L 59 105" />
+
+    <path
+        android:strokeColor="#BF40FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M 100 155 L 100 146 M 150 105 L 141 105" />
+
+    <!-- Ascending Growth Arrow -->
+    <path
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M 62 143 L 155 50 M 118 50 L 155 50 L 155 87">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="20"
+                android:startY="180"
+                android:endX="180"
+                android:endY="20">
+                <item android:offset="0.0" android:color="#00FFFF" />
+                <item android:offset="1.0" android:color="#BF40FF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

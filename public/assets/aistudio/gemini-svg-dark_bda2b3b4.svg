@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente Neon Ciano para Roxo -->
+    <linearGradient id="neon-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="100%" stop-color="#BF40FF" />
+    </linearGradient>
+    <!-- Brilho Neon (Glow) -->
+    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="#1a1a1c" flood-opacity="1" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Dark Mode (Zinc 800) -->
+  <rect width="500" height="220" rx="32" fill="#27272a" />
+
+  <!-- Ícone Cronômetro + Seta Neon -->
+  <g filter="url(#neon-glow)" transform="translate(45, 30)">
+    <!-- Botão Topo Cronômetro -->
+    <path d="M 65 15 L 95 15 M 80 15 L 80 28" stroke="url(#neon-grad)" stroke-width="8" stroke-linecap="round" />
+    <!-- Corpo do Cronômetro -->
+    <circle cx="80" cy="90" r="58" fill="none" stroke="url(#neon-grad)" stroke-width="8" />
+    <!-- Marcações Internas -->
+    <line x1="80" y1="45" x2="80" y2="52" stroke="#00FFFF" stroke-width="3" stroke-linecap="round" />
+    <line x1="35" y1="90" x2="42" y2="90" stroke="#00FFFF" stroke-width="3" stroke-linecap="round" />
+    <line x1="80" y1="135" x2="80" y2="128" stroke="#BF40FF" stroke-width="3" stroke-linecap="round" />
+    <line x1="125" y1="90" x2="118" y2="90" stroke="#BF40FF" stroke-width="3" stroke-linecap="round" />
+    <!-- Seta Ascendente -->
+    <path d="M 45 125 L 135 35 M 100 35 L 135 35 L 135 70" fill="none" stroke="url(#neon-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Tipografia T-Minus Mkt -->
+  <text x="215" y="132" font-family="&#39;Inter&#39;, sans-serif" font-size="42" font-weight="800" fill="#f4f4f5" filter="url(#neon-glow)">
+    T-Minus <tspan fill="#39FF14" font-weight="600">Mkt</tspan>
+  </text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" width="100%" height="100%">
+  <defs>
+    <!-- Filtro Neumórfico Light Mode -->
+    <filter id="neu-light" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="6" dy="6" stdDeviation="6" flood-color="#c2c2c4" flood-opacity="1" />
+      <feDropShadow dx="-6" dy="-6" stdDeviation="6" flood-color="#ffffff" flood-opacity="1" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Opcional Transparente / Base -->
+  <rect width="500" height="220" rx="32" fill="#e4e4e7" />
+
+  <!-- Ícone Cronômetro + Seta de Marketing -->
+  <g filter="url(#neu-light)" transform="translate(45, 30)">
+    <!-- Botão Topo Cronômetro -->
+    <path d="M 65 15 L 95 15 M 80 15 L 80 28" stroke="#e4e4e7" stroke-width="12" stroke-linecap="round" />
+    <!-- Corpo do Cronômetro -->
+    <circle cx="80" cy="90" r="58" fill="none" stroke="#e4e4e7" stroke-width="14" />
+    <!-- Marcações Internas -->
+    <line x1="80" y1="45" x2="80" y2="52" stroke="#a1a1aa" stroke-width="4" stroke-linecap="round" />
+    <line x1="35" y1="90" x2="42" y2="90" stroke="#a1a1aa" stroke-width="4" stroke-linecap="round" />
+    <line x1="80" y1="135" x2="80" y2="128" stroke="#a1a1aa" stroke-width="4" stroke-linecap="round" />
+    <line x1="125" y1="90" x2="118" y2="90" stroke="#a1a1aa" stroke-width="4" stroke-linecap="round" />
+    <!-- Seta Ascendente -->
+    <path d="M 45 125 L 135 35 M 100 35 L 135 35 L 135 70" fill="none" stroke="#e4e4e7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Tipografia T-Minus Mkt -->
+  <text x="215" y="132" font-family="&#39;Inter&#39;, sans-serif" font-size="42" font-weight="800" fill="#27272a">
+    T-Minus <tspan fill="#06b6d4" font-weight="600">Mkt</tspan>
+  </text>
+</svg>
